@@ -1,0 +1,105 @@
+.navbar{
+	background: #212121;
+	margin: 0;
+	padding: 20px 30px;
+}
+ 
+.logo{
+	font-size: 14pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+ 
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+ 
+.tombol{
+	display: none;
+	color: white;
+	font-size: 14pt;			
+}
+ 
+.tombol:hover{
+	cursor: pointer;
+}
+ 
+.menu{
+	margin: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;			
+}
+ 
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+}
+ 
+.menu li a{
+	padding:10px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: #3a3a3a;
+	color: #d1d0d0;
+	text-align: center;
+	font-size: x-large;
+}
+.images{
+	display: flex;
+	transition: 2s;
+}
+.wrapper{
+	width: 800px;
+	position: relative;
+	text-align: center;
+	font-size: large;
+}
+#slide-1:target ~ .images{
+	margin-left: 0px;
+}
+#slide-2:target ~ .images{
+	margin-left: -100px;
+}
+#slide-3:target{
+	margin-left: -200px;
+}
+#slide-4:target{
+	margin-left: -300px;
+}
+.navigation a{
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	background-color: #dedede;
+	font-size: 0px;
+	border-radius: 50%;
+	margin: 3px;
+	transition: 1s;
+}
+.navigation a:hover{
+	background-color: #666;
+}
+.navigation{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin-top: -50px;
+}
+@media screen and (max-width:800px) {
+	.wrapper{
+		width: 100%;
+	}
+	
+}

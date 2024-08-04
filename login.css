@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("image/IMG-20240713-WA0173.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+}
+.input {
+    position: fixed;
+    left: 610px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.input h1 {
+    text-align: center;
+    color: #fffcfc;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    padding-top: 0;
+    margin-top: -20px;
+}
+.box-input {
+    display: flex;
+    justify-content:space-between ;
+    margin: 10px;
+    border-bottom: 2px solid rgb(254, 253, 253);
+    padding: 8px 0;
+}
+.box-input i {
+    font-size: 23px;
+    color: rgb(252, 248, 248);
+    padding: 5px 0;
+}
+.box-input input {
+    width: 85%;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+.box-input input::placeholder {
+    color:rgb(0, 0, 0);
+}
+.btn-input .box-input input:hover {
+    background: rgba(10, 10, 10, s 0.5);
+}
+.btn-input {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background: none;
+    border: 1px solid white;
+    width: 92.5%;
+    padding: 10px;
+    color: rgb(255, 253, 253);
+    font-size: 18px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all .2s;
+    border-radius: 10px;
+}
+.btn-input:hover {
+    background: rgb(0, 81, 255);
+}
+.bottom {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: -20px;
+}
+.bottom p {
+    color: rgb(254, 254, 255);
+    font-size: 15px;
+    text-decoration: none;
+}
+.bottom a {
+    color: rgb(3, 142, 248);
+    font-size: 15px;
+    text-decoration: none;
+}
+.bottom a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,91 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-family: Arial, sans-serif;
+	background: #3a3a3a;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.navbar{
+	background: #212121;
+	margin: 0;
+	padding: 20px 30px;
+}
+ 
+.logo{
+	font-size: 14pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+ 
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+ 
+.tombol{
+	display: none;
+	color: white;
+	font-size: 14pt;			
+}
+ 
+.tombol:hover{
+	cursor: pointer;
+}
+ 
+.menu{
+	margin: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;			
+}
+ 
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+}
+ 
+.menu li a{
+	padding:10px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+.sosmed a{
+	display: inline-flex;
+	text-decoration: none;
+	font-size: 50px;
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: 0 8px;
+}
+.sosmed a::before{
+	content: "";
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background: linear-gradient(45deg,#3498db,#16a085);
+	border-radius: 50%;
+	z-index: -1;
+	transition: 0.3s ease-in;
+}
+.sosmed a:hover::before{
+	transform: scale(0);
+}
+.sosmed a i {
+	transition: 0.3s ease-in;
+}
+.sosmed a:hover i{
+	background: linear-gradient(45deg,#3498db,#16a085);
+	-webkit-text-fill-color: transparent;
+}
+
+
